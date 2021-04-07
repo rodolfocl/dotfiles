@@ -1,0 +1,2 @@
+La idea es agregar aqui todos los enlaces simbolicos.
+Luego se llama este archivo y se cran todos los enlaces simbolicos de inmediato.

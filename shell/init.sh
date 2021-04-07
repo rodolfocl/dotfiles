@@ -1,4 +1,9 @@
 
+# ==============================================================================================================
+# ESTO YA NO SERIA NECESARIO, YA QUE ES PARA TRABAJAR TANTO CON BASH COMO CON ZSH, PERO YO SOLO TRABAJO CON BASH
+# ==============================================================================================================
+
+
 # Enable aliases to be sudo'ed
 alias sudo="sudo "
 
