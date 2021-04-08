@@ -1,17 +1,24 @@
 
-# ==============================================================================================================
-# ESTO YA NO SERIA NECESARIO, YA QUE ES PARA TRABAJAR TANTO CON BASH COMO CON ZSH, PERO YO SOLO TRABAJO CON BASH
-# ==============================================================================================================
+# =====================================
+# EXPORTACIONES DE ARCHIVOS SH
+# =====================================
 
+# REFERENCIA
+# Incluir archivo en otro en bash
+# https://www.sololinux.es/incluir-un-script-bash-en-otro-script-bash/
 
-# Enable aliases to be sudo'ed
+# The Bash for loop
+# https://askubuntu.com/questions/315335/bash-command-for-each-file-in-a-folder
+
+# Habilitar alias para sudo
 alias sudo="sudo "
 
-# Registrar todos los aliases
-for aliasToSource in "$DOTFILES_PATH/shell/_aliases"*; do source "$aliasToSource"; done
+# Registro todos los aliases
+#for aliasToSource in "/Users/rodolfovenegas/.dotfiles/shell/_aliases/config.sh"*; do source "$aliasToSource"; done
+for aliasToSource in "/Users/rodolfovenegas/.dotfiles/shell/_aliases/"*.sh; do source "$aliasToSource"; done
 
-# Registrar todas las exportaciones
-for exportToSource in "$DOTFILES_PATH/shell/_exports"*; do source "$exportToSource"; done
+# Registro todas las funciones
+for functionToSource in "/Users/rodolfovenegas/.dotfiles/shell/_functions/"*.sh; do source "$functionToSource"; done
 
-# Registrar todas las funciones
-for functionToSource in "$DOTFILES_PATH/shell/_functions"*; do source "$functionToSource"; done
+# Registro todas las exportaciones
+#for exportToSource in "/Users/rodolfovenegas/.dotfiles/shell/_exports"*; do source "$exportToSource"; done
