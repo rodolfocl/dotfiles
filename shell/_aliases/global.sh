@@ -9,13 +9,14 @@ alias opendot="open .dotfiles"
 
 # Open directories with finder, intellij or vscode
 alias idea="/usr/local/bin/idea"
-alias i="idea "
+alias i="idea"
+alias c="code"
 alias i.="idea ."
 alias c.="code ."
 alias o.="open ."
 
 # Useful commands
-alias ver="tldr" # brew install tldr
+alias see="tldr" # brew install tldr
 alias copy="pbcopy < "
 
 # Node versions
