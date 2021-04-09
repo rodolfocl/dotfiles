@@ -1,5 +1,6 @@
 
 # ALIAS PARA TRABAJAR CON GIT
 
-alias gg="git status"
-alias glog="git log --oneline --decorate --all --graph"
+alias git="git "
+alias lg="log --oneline --decorate --all --graph"
+alias st="status -s -b"
