@@ -13,7 +13,6 @@
 alias sudo="sudo "
 
 # Registro todos los aliases
-#for aliasToSource in "/Users/rodolfovenegas/.dotfiles/shell/_aliases/config.sh"*; do source "$aliasToSource"; done
 for aliasToSource in "/Users/rodolfovenegas/.dotfiles/shell/_aliases/"*.sh; do source "$aliasToSource"; done
 
 # Registro todas las funciones
