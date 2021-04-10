@@ -15,25 +15,33 @@
 
 
 # =======PASOS A EJECUTAR=======
-#Mover archivos dentro de los dotfiles
-#mv .gitconfig .dotfiles/git
+# Mover archivos dentro de los dotfiles
+# mv .gitconfig .dotfiles/git
 
-#Crear link simbolico
-#ln -s .dotfiles/git/.gitconfig
+# Crear link simbolico
+# ln -s .dotfiles/git/.gitconfig
 
-#ver todos los archivos y los con emlaces simbolicos
-#ls -la
+# ver todos los archivos y los con emlaces simbolicos
+# ls -la
 
-#ver solo los archivos que tengan enlace simbolico
-#ls -la | grep "\->"
+# ver solo los archivos que tengan enlace simbolico
+# ls -la | grep "\->"
 
 # Listados de links simbolicos
 # ruta donde esta el archivo " " donde estaba antes el archivo
 
-#GIT
+# ZSH
+ln -s .dotfiles/shell/zsh/.zshrc $PWD/.zshrc
+
+# BASH
+ln -s .dotfiles/shell/bash/.bashrc $PWD/.bashrc
+ln -s .dotfiles/shell/bash/.bash_profile $PWD/.bash_profile
+
+# GIT
 ln -s .dotfiles/git/.gitconfig $PWD/.gitconfig
 ln -s .dotfiles/git/.gitignore_global $PWD/.gitignore_global
 
-#BASH
-
-#ZSH
+# VSCODE
+ln -s .dotfiles/editors/vs-code/settings.json $PWD/Library/Application\ Support/code/user/settings.json
+ln -s .dotfiles/editors/vs-code/keybindings.json $PWD/Library/Application\ Support/code/user/keybindings.json
+ln -s .dotfiles/editors/vs-code/snippets $PWD/Library/Application\ Support/code/user/snippets
