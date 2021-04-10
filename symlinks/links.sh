@@ -42,6 +42,6 @@ ln -s .dotfiles/git/.gitconfig $PWD/.gitconfig
 ln -s .dotfiles/git/.gitignore_global $PWD/.gitignore_global
 
 # VSCODE
-ln -s .dotfiles/editors/vs-code/settings.json $PWD/Library/Application\ Support/code/user/settings.json
-ln -s .dotfiles/editors/vs-code/keybindings.json $PWD/Library/Application\ Support/code/user/keybindings.json
-ln -s .dotfiles/editors/vs-code/snippets $PWD/Library/Application\ Support/code/user/snippets
+#ln -s .dotfiles/editors/vs-code/settings.json $PWD/Library/Application\ Support/code/user/settings.json
+#ln -s .dotfiles/editors/vs-code/keybindings.json $PWD/Library/Application\ Support/code/user/keybindings.json
+#ln -s .dotfiles/editors/vs-code/snippets $PWD/Library/Application\ Support/code/user/snippets
