@@ -4,4 +4,5 @@
 alias git="git "
 alias lg="log --oneline --decorate --all --graph"
 alias st="status -s -b"
-alias gd="pretty-diff"
+alias pd="pretty-diff"
+alias pl="pretty-log"
