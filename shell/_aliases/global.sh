@@ -19,7 +19,7 @@ alias c.="code ."
 alias o.="open ."
 
 # Useful commands
-alias see="tldr" # brew install tldr
+alias use="tldr" # brew install tldr
 alias copy="pbcopy < "
 
 # Node versions
