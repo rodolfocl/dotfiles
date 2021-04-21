@@ -1,6 +1,6 @@
 #================================================================
 # IMPORTO VARIABLES GLOBALES
-source /Users/rodolfovenegas/.dotfiles/shell/_functions/global.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_functions/variables.sh
 #================================================================
 
 
