@@ -92,6 +92,11 @@ source $ZSH/oh-my-zsh.sh
 # =================================SCRIPTS PERSONALIZADOS=====================================
 # ============================================================================================
 
+# ===============================================================
+# IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
+source /Users/rodolfovenegas/.dotfiles/shell/init.sh
+# ===============================================================
+
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
 
@@ -104,25 +109,6 @@ source $ZSH/oh-my-zsh.sh
 # https://tecadmin.net/change-background-color-of-text-in-linux-shell/
 
 
-# =====PRONPT NOMBRE DE USUARIO AL CREAR SESION=====
-# PROMPT="%n @ %d: "
-# PROMPT="%d: "
-
-# =====ALIAS=====
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-
-# Example alias
-# alias zshconfig="mate ~/.zshrc"
-# alias rhmyzsh="mate ~/.ohemy-zsh"
-
-# ===============================================================
-# IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
-source /Users/rodolfovenegas/.dotfiles/shell/init.sh
-# ===============================================================
-
 
 # =====STRING QUE SE MUESTRA AL INICIAR CONSOLA=====
 # echo "Hola"
@@ -130,39 +116,22 @@ source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 
 
 # =====FUNCIONES=====
-# para ejecutar la funcio solo basta con escribir el nombre por consola.
-# $1: es el primer parametro que se le pasa a la funcion
-
-# function hola {
-#   echo "Este es un mensaje de la funcion $1 y $2"
-# }
-
-
 
 function act() {
-   # Color texto
-  RED='\033[0;31m'
-  DGRAY='\033[1;30m'
-  YELLOW='\033[1;33m'
-  LCYAN='\033[1;36m'
-  GREEN='\033[0;32m'
-  NC='\033[0m' # No Color
-
-  git status9
+  git status
   if [ $? -eq 0 ]; then
     echo "\n PULL realizado con exito...\n"
     pm2 restart tt
-   echo "\n ${DGRAY}--------------------------------------${NC}"
-   echo "✔︎ ${GREEN} Código integrado en BETA${NC}"
-   echo "✔︎ ${GREEN} Teachertrack reiniciado correctamente${NC} \n"
-   echo "Código ejecucion: $? ${DGRAY}Sin error${NC}"
-   echo "${DGRAY}--------------------------------------${NC}"
+   echo "\n --------------------------------------"
+   echo " Teachertrack reiniciado correctamente \n"
+   echo "Código ejecucion: $? Sin error"
+   echo "--------------------------------------"
   else
-    echo "${DGRAY}--------------------------------------${NC}"
-    echo "${RED}Ocurrio un error al hacer PULL${NC}"
-    echo "Código ejecucion: $? ${RED}Error${NC}"
-    echo "${DGRAY}--------------------------------------${NC} \n"
-    echo "⬇️   ${YELLOW}Ejecutando git 'status'...${NC} ⬇️\n"
+    echo "--------------------------------------"
+    echo "Ocurrio un error al hacer PULL"
+    echo "Código ejecucion: $? Error"
+    echo "-------------------------------------- \n"
+    echo "Ejecutando git 'status'...n"
     git status
   fi
 }

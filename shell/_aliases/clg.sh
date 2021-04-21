@@ -18,5 +18,6 @@ alias runa="nodemon colegium_api.js"
 alias runp="nodemon postulaciones.js"
 alias rune="nodemon extracurriculares.js"
 alias runr="nodemon reinscripciones.js"
+alias runi="nodemon inhadoc.js"
 alias dev="npm run dev"
 

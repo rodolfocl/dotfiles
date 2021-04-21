@@ -66,6 +66,18 @@ function run() {
       # progress_bar
       nodemon extracurriculares.js
 
+      elif [[ "inha" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO INHABILIDAD DOCENTE${NC}"
+      echo ""
+      cd Documents/cloud/inhabilidad_docente
+      pwd
+      nvm use 4.9.1
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      # progress_bar
+      nodemon inhadoc.js
+
     # TEACHERTRACK
     elif [[ "tt" == "$PROYECTO" ]]; then
       echo "💥 ${LCYAN}CARGANDO TEACHERTRACK${NC}"
