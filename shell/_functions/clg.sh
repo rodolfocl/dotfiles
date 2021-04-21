@@ -1,5 +1,7 @@
+#================================================================
 # IMPORTO VARIABLES GLOBALES
 source /Users/rodolfovenegas/.dotfiles/shell/_functions/global.sh
+#================================================================
 
 
 function run() {
@@ -66,6 +68,7 @@ function run() {
       # progress_bar
       nodemon extracurriculares.js
 
+      # INHABILIDAD
       elif [[ "inha" == "$PROYECTO" ]]; then
       echo "💥 ${LCYAN}CARGANDO INHABILIDAD DOCENTE${NC}"
       echo ""
@@ -75,7 +78,6 @@ function run() {
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
-      # progress_bar
       nodemon inhadoc.js
 
     # TEACHERTRACK

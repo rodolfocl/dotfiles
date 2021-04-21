@@ -1,5 +1,7 @@
+#================================================================
 # IMPORTO VARIABLES GLOBALES
 source /Users/rodolfovenegas/.dotfiles/shell/_functions/global.sh
+#================================================================
 
 
 function pretty-diff() {
@@ -11,8 +13,8 @@ function pretty-diff() {
   ##? pretty-diff, al dar enter en un archivomodificado copia el path del archivo
 
   if (! git rev-parse HEAD >/dev/null 2>&1 ); then
-    echo "\n${DGRAY}===========================================${NC}"
-    echo "${YELLOW}El directorio, no es un repositorio de GIT!${YELLOW}"
+    echo "\n${DGRAY}============================================${NC}"
+    echo "${YELLOW}Este directorio no es un repositorio de GIT!${YELLOW}"
     echo "${DGRAY}============================================${NC}\n"
   else
     git -c color.status=always status --short |
@@ -48,6 +50,7 @@ function pretty-log() {
 
   echo ${commit_hash} | tr -d '\n' | pbcopy
 }
+
 
 function show-ignored() {
   ##? Show all ignored files
