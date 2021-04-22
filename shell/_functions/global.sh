@@ -4,6 +4,11 @@ source /Users/rodolfovenegas/.dotfiles/shell/_functions/variables.sh
 #================================================================
 
 
+
+#===============================================
+# FUNCIONES UTILIZADOS PARA TRABAJAR EN COLEGIUM
+#===============================================
+
 function run() {
   # Parametro ingresado a la funcion
   typeset PROYECTO

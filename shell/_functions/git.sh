@@ -29,7 +29,6 @@ function pretty-diff() {
 
 }
 
-
 function pretty-log() {
   ##? Git log filtering con fzf
   ##?
@@ -51,7 +50,6 @@ function pretty-log() {
   echo ${commit_hash} | tr -d '\n' | pbcopy
 }
 
-
 function show-ignored() {
   ##? Show all ignored files
   #?? 1.0.0
@@ -62,7 +60,6 @@ function show-ignored() {
   git status --ignored -s | grep "\!\!"
 }
 
-
 function find-msg-commit() {
   ##? Find commits by commit message
   #?? 1.0.0
@@ -72,7 +69,6 @@ function find-msg-commit() {
 
   git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --regexp-ignore-case --grep=$1
 }
-
 
 function standup() {
   ##? Muestra utltimos commit realizados por dias con su fecha y respectiva hora
