@@ -136,7 +136,7 @@ function run() {
     else
       echo ""
       echo "${DGRAY}###################################################${NC}"
-      echo "${DGRAY}# ${NC}👹 ${RED}ERROR:${NC} El proyecto ingresado no es valido 🤡${DGRAY} #${NC}"
+      echo "${DGRAY}# ${NC}👹 ${RED}ERROR:${NC} El proyecto ingresado no es valido 👹${DGRAY} #${NC}"
       echo "${DGRAY}###################################################${NC}"
       echo ""
       cat .dotfiles/shell/_images/.murcielago
