@@ -100,15 +100,6 @@ source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
 
-# Colores para el texto
-# https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
-
-
-# Colores para el background del texto
-# https://nick3499.medium.com/bash-echo-text-color-background-color-e8d8c41d5a91
-# https://tecadmin.net/change-background-color-of-text-in-linux-shell/
-
-
 
 # =====STRING QUE SE MUESTRA AL INICIAR CONSOLA=====
 # echo "Hola"
@@ -134,10 +125,6 @@ function act() {
     echo "Ejecutando git 'status'...n"
     git status
   fi
-}
-
-function hola(){
-  echo  "holaaaaaaaabetaaa"
 }
 
 
