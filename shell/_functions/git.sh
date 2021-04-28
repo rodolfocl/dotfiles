@@ -82,20 +82,23 @@ function standup() {
   git log --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local
 }
 
-function undo-last-commit() {
-  ##? Desg¡hace el utltimo commit realizado
+function revert-last-commit() {
+  ##? Crea nuevo commit deshaciendo el commit anteior, que lo invierta, si eliminanos un archivo este nuevo commit lo agregara,
+  ##? manteniendo los commit en el historico, agregando un nuevo commit con la inversion.
+  ##! OJO: Elimina el trabajo reralizado del working tree y staging area.
+  #?? Sirve para respeter el historico
   #?? 1.0.0
   ##?
   ##? Usage:
-  ##? standup
-  git reset HEAD~1 --mixed
+  ##? revert-last-commit
+  git revert @
 }
 
 function undo-last-commit() {
-  ##? Desg¡hace el utltimo commit realizado
+  ##? Quita el utltimo commit realizado (del historico), manteniendo los cambios en el Working Tree (antes del staging)
   #?? 1.0.0
   ##?
   ##? Usage:
-  ##? standup
+  ##? undo-last-commit
   git reset HEAD~1 --mixed
 }
