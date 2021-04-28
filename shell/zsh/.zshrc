@@ -88,25 +88,19 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# ============================================================================================
-# =================================SCRIPTS PERSONALIZADOS=====================================
-# ============================================================================================
 
 # ===============================================================
 # IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
 source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 # ===============================================================
-
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
 
 
-# =====STRING QUE SE MUESTRA AL INICIAR CONSOLA=====
+# STRING QUE SE MUESTRA AL INICIAR CONSOLA
 # echo "Hola"
 # cat .demonio #Imagen en consola
 
-
-# =====FUNCIONES=====
 
 function act() {
   git status
@@ -128,7 +122,6 @@ function act() {
 }
 
 
-
-# VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS) VER SI ES NECESARIO!!!!!!!!!
+# VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS NVM)
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

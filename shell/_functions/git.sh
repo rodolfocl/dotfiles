@@ -81,3 +81,12 @@ function standup() {
 
   git log --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local
 }
+
+function undo-last-commit() {
+  ##? Desg¡hace el utltimo commit realizado 
+  #?? 1.0.0
+  ##?
+  ##? Usage:
+  ##? standup
+  git reset HEAD~1 --mixed
+}
