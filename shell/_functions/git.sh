@@ -100,8 +100,6 @@ function undo-last-commit() {
   ##?
   ##? Usage:
   ##? undo-last-commit
+  echo "Ultimo commit deshecho 🤷🏻‍♂️\n"
   git reset HEAD~1 --mixed
-  echo "Ultimo commit deshecho 🤷🏻‍♂️"
 }
-
-#Agrego un comentario de prueba
