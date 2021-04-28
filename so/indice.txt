@@ -1,1 +1,0 @@
-En este directorio iran todas las configuraciones por apps especificas de macOS
