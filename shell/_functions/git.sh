@@ -83,7 +83,16 @@ function standup() {
 }
 
 function undo-last-commit() {
-  ##? Desg¡hace el utltimo commit realizado 
+  ##? Desg¡hace el utltimo commit realizado
+  #?? 1.0.0
+  ##?
+  ##? Usage:
+  ##? standup
+  git reset HEAD~1 --mixed
+}
+
+function undo-last-commit() {
+  ##? Desg¡hace el utltimo commit realizado
   #?? 1.0.0
   ##?
   ##? Usage:
