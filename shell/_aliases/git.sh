@@ -3,6 +3,6 @@
 
 alias git="git "
 alias lg="log --oneline --decorate --all --graph"
-alias st="status -sb"
+alias st="status -s -b"
 alias pd="pretty-diff"
 alias pl="pretty-log"

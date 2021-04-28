@@ -88,19 +88,25 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# ============================================================================================
+# =================================SCRIPTS PERSONALIZADOS=====================================
+# ============================================================================================
 
 # ===============================================================
 # IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
 source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 # ===============================================================
+
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
 
 
-# STRING QUE SE MUESTRA AL INICIAR CONSOLA
+# =====STRING QUE SE MUESTRA AL INICIAR CONSOLA=====
 # echo "Hola"
 # cat .demonio #Imagen en consola
 
+
+# =====FUNCIONES=====
 
 function act() {
   git status
@@ -122,7 +128,90 @@ function act() {
 }
 
 
-# VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS NVM)
-# Este export relentiza el inicio de sesion en consola
+# function progress_bar(){
+#   echo -ne "${B_WHITE}##################${B_NC}                                               ${bold}(33%)${normal} \r\c"
+#   sleep 0.1
+#   echo -ne "${B_WHITE}########################################${B_NC}                         ${bold}(68%)${normal} \r\c"
+#   sleep 0.1
+#   echo -ne "${B_WHITE}#################################################${B_NC}                ${bold}(83%)${normal} \r\c"
+#   sleep 0.1
+#   echo -ne "${B_WHITE}################################################################${B_NC} ${bold}(100%)${normal} \r\c"
+#   sleep 0.3
+#   echo ""
+#   echo ""
+# }
+
+
+# Funciones para iniciar proyectos con sus respectivas versiones de node.
+# function api_ {
+#   echo "💥 CARGANDO COLEGIUM-API"
+#   cd Documents/cloud/colegium-api
+#   pwd
+#   nvm use 4.9.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   nodemon colegium_api.js
+# }
+
+# function pos_ {
+#   echo "💥 CARGANDO POSTULACIONES"
+#   cd Documents/cloud/postulaciones
+#   pwd
+#   nvm use 4.9.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   nodemon postulaciones.js
+# }
+
+# function ext_ {
+#   echo "💥 CARGANDO EXTRACURRICULARES"
+#   cd Documents/cloud/extracurriculares
+#   pwd
+#   nvm use 4.9.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   nodemon extracurriculares.js
+# }
+
+# function tt_ {
+#   echo "💥 ${LCYAN}CARGANDO TEACHERTRACK${NC}"
+#   echo ""
+#   cd Documents/webapp/teachertrack-webapp
+#   pwd
+#   nvm use 10.4.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   npm run dev
+# }
+
+# function apic_ {
+#   echo "💥 ${LCYAN}CARGANDO COLEGIUMCLOUD-API${NC}"
+#   echo ""
+#   cd Documents/webapp/colegiumcloud-api
+#   pwd
+#   nvm use 10.4.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   npm run dev
+# }
+
+# function esb_ {
+#   echo "💥 ${LCYAN}CARGANDO COLEGIUMCLOUD-API_ESB${NC}"
+#   echo ""
+#   cd Documents/webapp/colegiumcloud-api_esb
+#   pwd
+#   nvm use 10.4.1
+#   echo ""
+#   echo "⚙️  INICIANDO PROYECTO..."
+#   echo ""
+#   npm run dev
+# }
+
+# VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS) VER SI ES NECESARIO!!!!!!!!!
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
