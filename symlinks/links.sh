@@ -44,6 +44,11 @@ ln -s .dotfiles/git/.gitignore_global $PWD/.gitignore_global
 # iTerm2
 # No tiene link simbolico se agrega directo desde la configuracion/general/preferences
 
+# Karabiner-elements
+# mv .config/karabiner/karabiner.json .dotfiles/so/mac/karabiner-elements/
+ln -s .dotfiles/so/mac/karabiner-elements/karabiner.json $PWD/.config/karabiner/karabiner.json
+
+
 # VSCODE
 #ln -s .dotfiles/editors/vs-code/settings.json $PWD/Library/Application\ Support/code/user/settings.json
 #ln -s .dotfiles/editors/vs-code/keybindings.json $PWD/Library/Application\ Support/code/user/keybindings.json
