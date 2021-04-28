@@ -41,6 +41,9 @@ ln -s .dotfiles/shell/bash/.bash_profile $PWD/.bash_profile
 ln -s .dotfiles/git/.gitconfig $PWD/.gitconfig
 ln -s .dotfiles/git/.gitignore_global $PWD/.gitignore_global
 
+# iTerm2
+# No tiene link simbolico se agrega directo desde la configuracion/general/preferences
+
 # VSCODE
 #ln -s .dotfiles/editors/vs-code/settings.json $PWD/Library/Application\ Support/code/user/settings.json
 #ln -s .dotfiles/editors/vs-code/keybindings.json $PWD/Library/Application\ Support/code/user/keybindings.json
