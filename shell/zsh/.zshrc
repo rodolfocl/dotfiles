@@ -64,7 +64,11 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 # zsh-autosuggestions: Plugin instaldo por mi, para la sugerencia
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-plugins=(git zsh-autosuggestions)
+#
+# Video plugins: https://onedrive.live.com/?cid=1C5A9C77DFE4D4B9&id=1C5A9C77DFE4D4B9%21126154&parId=1C5A9C77DFE4D4B9%21126151&o=OneUp
+# Plugins comunidad zsh: https://github.com/zsh-users
+# Plugins instalados: zsh-autosuggestions, zsh-syntax-highlighting
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
