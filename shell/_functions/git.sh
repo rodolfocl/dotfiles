@@ -6,7 +6,7 @@ source /Users/rodolfovenegas/.dotfiles/shell/_functions/variables.sh
 
 function pretty-diff() {
   ##? Ver git diff con un previsualizador de los cambios en la terminal
-  ##? Utilizando fzf: bre install fzf
+  ##? Utilizando fzf: brew install fzf
   ##?  1.0.0
   ##?
   ##? Usage:
@@ -31,6 +31,7 @@ function pretty-diff() {
 
 function pretty-log() {
   ##? Git log filtering con fzf
+  ##? Utilizando fzf: brew install fzf
   ##?
   ##? Usage:
   ##? pretty-log, al dar enter en un commmit copia el id del commit seleccionado
@@ -96,6 +97,7 @@ function revert-last-commit() {
 
 function undo-last-commit() {
   ##? Quita el utltimo commit realizado (del historico), manteniendo los cambios en el Working Tree (antes del staging)
+  ##? Para deshacer este commit no debe haber sido pusheado, de lo contrario se debera resolver conflictos con el repositorio remoto
   #?? 1.0.0
   ##?
   ##? Usage:
