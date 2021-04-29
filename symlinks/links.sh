@@ -29,6 +29,7 @@
 
 # Listados de links simbolicos
 # ruta donde esta el archivo " " donde estaba antes el archivo
+# Ver video si quedan dudas: https://onedrive.live.com/?cid=1C5A9C77DFE4D4B9&id=1C5A9C77DFE4D4B9%21126149&parId=1C5A9C77DFE4D4B9%21126136&o=OneUp
 
 # ZSH
 ln -s .dotfiles/shell/zsh/.zshrc $PWD/.zshrc
