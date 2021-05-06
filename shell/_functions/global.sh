@@ -23,6 +23,7 @@ function run() {
     echo "→ ${YELLOW}api${NC} : Colegium-api "
     echo "→ ${YELLOW}pos${NC} : Postulaciones "
     echo "→ ${YELLOW}ext${NC} : Extracurriculares "
+    echo "→ ${YELLOW}inha${NC}: Inhabilidad "
     echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
     echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
     echo "→ ${YELLOW}apic${NC}: colegiumcloud-api "

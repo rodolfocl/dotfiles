@@ -106,21 +106,21 @@ source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 # cat .demonio #Imagen en consola
 
 
-function act() {
+function generate() {
   git status
   if [ $? -eq 0 ]; then
     echo "\n PULL realizado con exito...\n"
     pm2 restart tt
-   echo "\n --------------------------------------"
-   echo " Teachertrack reiniciado correctamente \n"
-   echo "Código ejecucion: $? Sin error"
-   echo "--------------------------------------"
+    echo "\n --------------------------------------"
+    echo " Teachertrack reiniciado correctamente \n"
+    echo "Código ejecucion: $? Sin error"
+    echo "--------------------------------------"
   else
     echo "--------------------------------------"
     echo "Ocurrio un error al hacer PULL"
     echo "Código ejecucion: $? Error"
     echo "-------------------------------------- \n"
-    echo "Ejecutando git 'status'...n"
+    echo "Ejecutando git 'status'...\n"
     git status
   fi
 }
