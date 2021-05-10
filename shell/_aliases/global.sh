@@ -10,11 +10,9 @@ alias dotfiles="cd /Users/rodolfovenegas/.dotfiles/"
 alias opendot="open .dotfiles"
 
 # Open directories with finder, intellij or vscode
-alias wstorm="open -na "WebStorm.app""
-alias w="wstorm"
+alias w="/usr/local/bin/webstorm"
 alias w.="wstorm ."
-alias idea="/usr/local/bin/idea"
-alias i="idea"
+alias i="/usr/local/bin/idea"
 alias i.="idea ."
 alias c="code"
 alias c.="code ."
