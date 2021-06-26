@@ -26,6 +26,7 @@ alias copy="pbcopy < "
 alias 4="nvm use 4.9.1"
 alias 10="nvm use 10.4.1"
 alias 12="nvm use 12.16.3"
+alias 15="nvm use 15.13.0"
 
 #=============================================
 # ALIASES UTILIZADOS PARA TRABAJAR EN COLEGIUM
@@ -43,6 +44,8 @@ alias tt='cd Documents/webapp/teachertrack-webapp'
 alias apic='cd Documents/webapp/colegiumcloud-api'
 alias esb='cd Documents/webapp/colegiumcloud-api_esb'
 alias sn4='cd Documents/webapp/schoolnet4-webapp'
+alias inha='cd Documents/cloud/inhabilidad_docente'
+alias app='cd Documents/webapp/colegiumcloud-appbasefrontend'
 
 # Execute projects
 alias runa="nodemon colegium_api.js"

@@ -26,6 +26,7 @@ function run() {
     echo "→ ${YELLOW}inha${NC}: Inhabilidad "
     echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
     echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
+    echo "→ ${YELLOW}app${NC} : colegiumcloud-appbasefrontend "
     echo "→ ${YELLOW}apic${NC}: colegiumcloud-api "
     echo "→ ${YELLOW}esb${NC} : colegiumcloud-api_esb "
     echo " ${DGRAY}----------------------------${NC}"
@@ -105,6 +106,18 @@ function run() {
       cd Documents/webapp/schoolnet4-webapp
       pwd
       nvm use 10.4.1
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      npm run dev
+
+    # COLEGIUMCLOUD-APPBASEFRONTEND
+    elif [[ "app" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO CCOLEGIUMCLOUD-APPBASEFRONTEND${NC}"
+      echo ""
+      cd Documents/webapp/colegiumcloud-appbasefrontend
+      pwd
+      nvm use 15.13.0
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
