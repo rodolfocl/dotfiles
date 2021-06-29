@@ -24,6 +24,7 @@ function run() {
     echo "→ ${YELLOW}pos${NC} : Postulaciones "
     echo "→ ${YELLOW}ext${NC} : Extracurriculares "
     echo "→ ${YELLOW}inha${NC}: Inhabilidad "
+    echo "→ ${YELLOW}ori ${NC}: Orientacion OyS "
     echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
     echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
     echo "→ ${YELLOW}app${NC} : colegiumcloud-appbasefrontend "
@@ -86,6 +87,17 @@ function run() {
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
       nodemon inhadoc.js
+
+      elif [[ "ori" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO ORIENTACION Y SEGUIMIENTO${NC}"
+      echo ""
+      cd Documents/cloud/orientacion
+      pwd
+      nvm use 4.9.1
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      nodemon orientacion.js
 
     # TEACHERTRACK
     elif [[ "tt" == "$PROYECTO" ]]; then
