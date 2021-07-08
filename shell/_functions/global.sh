@@ -24,10 +24,11 @@ function run() {
     echo "→ ${YELLOW}pos${NC} : Postulaciones "
     echo "→ ${YELLOW}ext${NC} : Extracurriculares "
     echo "→ ${YELLOW}inha${NC}: Inhabilidad "
-    echo "→ ${YELLOW}ori ${NC}: Orientacion OyS "
+    echo "→ ${YELLOW}ori${NC} : Orientacion OyS "
+    echo "→ ${YELLOW}ges${NC} : GestIOn de talento GDT "
     echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
     echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
-    echo "→ ${YELLOW}app${NC} : colegiumcloud-appbasefrontend "
+    echo "→ ${YELLOW}app${NC} : appbasefrontend "
     echo "→ ${YELLOW}apic${NC}: colegiumcloud-api "
     echo "→ ${YELLOW}esb${NC} : colegiumcloud-api_esb "
     echo " ${DGRAY}----------------------------${NC}"
@@ -98,6 +99,17 @@ function run() {
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
       nodemon orientacion.js
+
+      elif [[ "ges" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO GESTION DE TALENTOS${NC}"
+      echo ""
+      cd Documents/cloud/gdd
+      pwd
+      nvm use 4.9.1
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      nodemon gdd.js
 
     # TEACHERTRACK
     elif [[ "tt" == "$PROYECTO" ]]; then
