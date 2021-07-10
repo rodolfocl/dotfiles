@@ -139,7 +139,7 @@ function run() {
     elif [[ "app" == "$PROYECTO" ]]; then
       echo "💥 ${LCYAN}CARGANDO CCOLEGIUMCLOUD-APPBASEFRONTEND${NC}"
       echo ""
-      cd Documents/webapp/colegiumcloud-appbasefrontend
+      cd Documents/webapp/appbasefrontend
       pwd
       nvm use 15.13.0
       echo ""
