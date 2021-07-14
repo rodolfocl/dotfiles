@@ -26,6 +26,7 @@ alias copy="pbcopy < "
 alias 4="nvm use 4.9.1"
 alias 10="nvm use 10.4.1"
 alias 12="nvm use 12.16.3"
+alias 14="nvm use 14.17.3"
 alias 15="nvm use 15.13.0"
 
 #=============================================
