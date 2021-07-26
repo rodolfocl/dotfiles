@@ -25,12 +25,13 @@ function run() {
     echo "→ ${YELLOW}ext${NC} : Extracurriculares "
     echo "→ ${YELLOW}inha${NC}: Inhabilidad "
     echo "→ ${YELLOW}ori${NC} : Orientacion OyS "
-    echo "→ ${YELLOW}ges${NC} : GestIOn de talento GDT "
+    echo "→ ${YELLOW}ges${NC} : Gestion de talento GDT "
     echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
     echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
     echo "→ ${YELLOW}app${NC} : appbasefrontend "
     echo "→ ${YELLOW}apic${NC}: colegiumcloud-api "
     echo "→ ${YELLOW}esb${NC} : colegiumcloud-api_esb "
+    echo "→ ${YELLOW}pa${NC} : procesosautomaticos_esb "
     echo " ${DGRAY}----------------------------${NC}"
     echo ""
 
@@ -164,6 +165,18 @@ function run() {
       echo "💥 ${LCYAN}CARGANDO COLEGIUMCLOUD-API_ESB${NC}"
       echo ""
       cd Documents/webapp/colegiumcloud-api_esb
+      pwd
+      nvm use 10.4.1
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      npm run dev
+
+    # PROCESOSAUTOMATICOS_ESB
+    elif [[ "pa" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO PROCESOSAUTOMATICOS_ESB${NC}"
+      echo ""
+      cd Documents/webapp/procesosautomaticos_esb
       pwd
       nvm use 10.4.1
       echo ""
