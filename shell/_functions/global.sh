@@ -118,7 +118,7 @@ function run() {
       echo ""
       cd Documents/webapp/teachertrack-webapp
       pwd
-      nvm use 10.4.1
+      nvm use 10.15.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
@@ -130,7 +130,7 @@ function run() {
       echo ""
       cd Documents/webapp/schoolnet4-webapp
       pwd
-      nvm use 10.4.1
+      nvm use 10.15.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
@@ -154,7 +154,7 @@ function run() {
       echo ""
       cd Documents/webapp/colegiumcloud-api
       pwd
-      nvm use 10.4.1
+      nvm use 10.15.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
@@ -166,7 +166,7 @@ function run() {
       echo ""
       cd Documents/webapp/colegiumcloud-api_esb
       pwd
-      nvm use 10.4.1
+      nvm use 10.15.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
@@ -178,7 +178,7 @@ function run() {
       echo ""
       cd Documents/webapp/procesosautomaticos_esb
       pwd
-      nvm use 10.4.1
+      nvm use 10.15.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
