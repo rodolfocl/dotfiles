@@ -136,11 +136,11 @@ function run() {
       echo ""
       npm run dev
 
-    # COLEGIUMCLOUD-APPBASEFRONTEND
-    elif [[ "app" == "$PROYECTO" ]]; then
-      echo "💥 ${LCYAN}CARGANDO CCOLEGIUMCLOUD-APPBASEFRONTEND${NC}"
+    # COLEGIUMCLOUD-TEACHERTRACK-WEBAPP (APP BASE TT 1.5)
+    elif [[ "tt15" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO CCOLEGIUMCLOUD-TEACHERTRACK-WEBAPP 1.5${NC}"
       echo ""
-      cd Documents/webapp/appbasefrontend
+      cd Documents/webapp/teachertrack15
       pwd
       nvm use 15.13.0
       echo ""
