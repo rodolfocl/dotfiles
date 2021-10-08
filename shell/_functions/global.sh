@@ -192,6 +192,25 @@ function run() {
       echo ""
       cat .dotfiles/shell/_images/.murcielago
       echo ""
+      echo "Debes indicar que proyecto deseas ejecutar."
+      echo "   Uso: run <proyecto>"
+      echo ""
+      echo " ${DGRAY}----------------------------${NC}"
+      echo "→ ${YELLOW}api${NC} : Colegium-api "
+      echo "→ ${YELLOW}pos${NC} : Postulaciones "
+      echo "→ ${YELLOW}ext${NC} : Extracurriculares "
+      echo "→ ${YELLOW}inha${NC}: Inhabilidad "
+      echo "→ ${YELLOW}ori${NC} : Orientacion OyS "
+      echo "→ ${YELLOW}ges${NC} : Gestion de talento GDT "
+      echo "→ ${YELLOW}tt${NC}  : TeacherTrack  "
+      echo "→ ${YELLOW}sn4${NC} : Schoolnet4 "
+      echo "→ ${YELLOW}app${NC} : appbasefrontend "
+      echo "→ ${YELLOW}apic${NC}: colegiumcloud-api "
+      echo "→ ${YELLOW}esb${NC} : colegiumcloud-api_esb "
+      echo "→ ${YELLOW}pa${NC} : procesosautomaticos_esb "
+      echo " ${DGRAY}----------------------------${NC}"
+      echo ""
+      echo ""
     fi
   fi
 }
