@@ -90,7 +90,8 @@ function run() {
       echo ""
       nodemon inhadoc.js
 
-      elif [[ "ori" == "$PROYECTO" ]]; then
+      # ORIENTACION Y SEGUIMINETO
+      elif [[ "oys" == "$PROYECTO" ]]; then
       echo "💥 ${LCYAN}CARGANDO ORIENTACION Y SEGUIMIENTO${NC}"
       echo ""
       cd Documents/cloud/orientacion
@@ -101,7 +102,8 @@ function run() {
       echo ""
       nodemon orientacion.js
 
-      elif [[ "ges" == "$PROYECTO" ]]; then
+      # GESTION DE TALENTOS
+      elif [[ "gdt" == "$PROYECTO" ]]; then
       echo "💥 ${LCYAN}CARGANDO GESTION DE TALENTOS${NC}"
       echo ""
       cd Documents/cloud/gdd
