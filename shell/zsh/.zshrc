@@ -62,12 +62,23 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# zsh-autosuggestions: Plugin instaldo por mi, para la sugerencia
-# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+# =======================================================================================
+# =======================P=L=U=G=I=N=S===================================================
+# =======================================================================================
+
+# PERSONALIZADOS=========================================================================
+# 1- https://github.com/zsh-users/zsh-autosuggestions
+# 2- https://github.com/zsh-users/zsh-syntax-highlighting
+# INSTALACION
+# Ir al INSTALL.MD y clonar repositorio para la opcion Oh My Zsh, copio script y ejecuro en terminal
+
+# zsh-autosuggestions: Sugiere comandos ya utilizados con aterioridad
+# zzsh-syntax-highlighting: Resalta comandos y resultados con coleres
 #
 # Video plugins: https://onedrive.live.com/?cid=1C5A9C77DFE4D4B9&id=1C5A9C77DFE4D4B9%21126154&parId=1C5A9C77DFE4D4B9%21126151&o=OneUp
-# Plugins comunidad zsh: https://github.com/zsh-users
-# Plugins instalados: zsh-autosuggestions, zsh-syntax-highlighting
+
+# DEFINO PLUGINS A UTILIZAR
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -106,24 +117,6 @@ source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 # cat .demonio #Imagen en consola
 
 
-function generate() {
-  git status
-  if [ $? -eq 0 ]; then
-    echo "\n PULL realizado con exito...\n"
-    pm2 restart tt
-    echo "\n --------------------------------------"
-    echo " Teachertrack reiniciado correctamente \n"
-    echo "Código ejecucion: $? Sin error"
-    echo "--------------------------------------"
-  else
-    echo "--------------------------------------"
-    echo "Ocurrio un error al hacer PULL"
-    echo "Código ejecucion: $? Error"
-    echo "-------------------------------------- \n"
-    echo "Ejecutando git 'status'...\n"
-    git status
-  fi
-}
 
 
 # VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS NVM)
