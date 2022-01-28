@@ -3,3 +3,5 @@
 	email = rodolfovenegas.es@gmail.com
 [core]
 	autocrlf = input
+[push]
+	default = simple

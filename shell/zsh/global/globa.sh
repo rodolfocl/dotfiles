@@ -344,7 +344,7 @@ function run() {
       echo ""
       cd Documents/webapp/teachertrack15
       pwd
-      nvm use 15.13.0
+      nvm use 14.17.3
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
