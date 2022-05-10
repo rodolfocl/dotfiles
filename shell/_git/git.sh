@@ -1,8 +1,20 @@
 #================================================================
 # IMPORTO VARIABLES GLOBALES
-source /Users/rodolfovenegas/.dotfiles/shell/_functions/variables.sh
+source /Users/rodolfovenegas/.dotfiles/shell/global/variables.sh
 #================================================================
 
+
+# ALIASES ================================
+
+alias git="git "
+alias lg="log --oneline --decorate --all --graph"
+alias st="status -s -b"
+alias pd="pretty-diff"
+alias pl="pretty-log"
+#alias undo="undo-last-commit" # funcion git
+alias undo="reset HEAD~1 --mixed" # Deshace el utimo commit manteniendo los cambios
+
+# FUNCTIONS ================================
 
 function pretty-diff() {
   ##? Ver git diff con un previsualizador de los cambios en la terminal

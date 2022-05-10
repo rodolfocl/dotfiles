@@ -106,7 +106,10 @@ source $ZSH/oh-my-zsh.sh
 
 # ===============================================================
 # IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
-source /Users/rodolfovenegas/.dotfiles/shell/init.sh
+# source /Users/rodolfovenegas/.dotfiles/shell/init.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_git/git.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_clg/clg.sh
+source /Users/rodolfovenegas/.dotfiles/shell/global/aliasesGlobal.sh
 # ===============================================================
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
