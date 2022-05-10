@@ -8,7 +8,7 @@ source /Users/rodolfovenegas/.dotfiles/shell/global/variables.sh
 
 alias git="git "
 alias lg="log --oneline --decorate --all --graph"
-alias st="status -s -b"
+alias st="git status -s -b"
 alias pd="pretty-diff"
 alias pl="pretty-log"
 #alias undo="undo-last-commit" # funcion git
@@ -48,19 +48,23 @@ function pretty-log() {
   ##? Usage:
   ##? pretty-log, al dar enter en un commmit copia el id del commit seleccionado
 
-  commit=$(
-  git log --graph \
-    --color=always \
-    --date=human \
-    --format="%C(auto)%h%d %s %C(black)%C(bold)%ad by %an" |
-    fzf --ansi --no-sort \
-      --preview '(git diff-tree --no-commit-id --name-status -r {2})' \
-      --preview-window right:35%
-  )
-
-  commit_hash=$(echo ${commit} | awk '{print $2}')
-
-  echo ${commit_hash} | tr -d '\n' | pbcopy
+  if (! git rev-parse HEAD >/dev/null 2>&1 ); then
+      echo "\n${DGRAY}============================================${NC}"
+      echo "${YELLOW}Este directorio no es un repositorio de GIT!${YELLOW}"
+      echo "${DGRAY}============================================${NC}\n"
+  else
+    commit=$(
+      git log --graph \
+        --color=always \
+        --date=human \
+        --format="%C(auto)%h%d %s %C(black)%C(bold)%ad by %an" |
+        fzf --ansi --no-sort \
+          --preview '(git diff-tree --no-commit-id --name-status -r {2})' \
+          --preview-window right:35%
+      )
+      commit_hash=$(echo ${commit} | awk '{print $2}')
+      echo ${commit_hash} | tr -d '\n' | pbcopy
+  fi
 }
 
 function show-ignored() {
