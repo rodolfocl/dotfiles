@@ -67,7 +67,7 @@ ZSH_THEME="robbyrussell"
 # =======================P=L=U=G=I=N=S===================================================
 # =======================================================================================
 
-# PERSONALIZADOS=========================================================================
+# PLUGINS PERSONALIZADOS
 # 1- https://github.com/zsh-users/zsh-autosuggestions
 # 2- https://github.com/zsh-users/zsh-syntax-highlighting
 # INSTALACION
@@ -78,7 +78,7 @@ ZSH_THEME="robbyrussell"
 #
 # Video plugins: https://onedrive.live.com/?cid=1C5A9C77DFE4D4B9&id=1C5A9C77DFE4D4B9%21126154&parId=1C5A9C77DFE4D4B9%21126151&o=OneUp
 
-# DEFINO PLUGINS A UTILIZAR
+# DEFINO PLUGINS A UTILIZAR (separados por espacio)
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
