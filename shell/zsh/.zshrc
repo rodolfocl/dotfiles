@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # source /Users/rodolfovenegas/.dotfiles/shell/init.sh
 source /Users/rodolfovenegas/.dotfiles/shell/_git/git.sh
 source /Users/rodolfovenegas/.dotfiles/shell/_clg/clg.sh
-source /Users/rodolfovenegas/.dotfiles/shell/global/aliasesGlobal.sh
+source /Users/rodolfovenegas/.dotfiles/shell/global/global.sh
 # ===============================================================
 # Para ver ejemplo de sintaxys de shell script
 # https://devhints.io/bash
