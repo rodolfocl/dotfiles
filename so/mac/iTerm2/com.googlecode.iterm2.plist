@@ -6,6 +6,19 @@
 	<true/>
 	<key>AboutToPasteTabsWithCancel_selection</key>
 	<integer>0</integer>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<integer>29</integer>
+			<key>parameter</key>
+			<string>55F21DE8-F92E-4819-B319-2ED382DE0614</string>
+			<key>title</key>
+			<string>Split Vertically</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>Command</key>
