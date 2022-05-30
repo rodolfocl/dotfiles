@@ -67,6 +67,7 @@ function run() {
     echo "→ ${YELLOW}apic${NC} :  colegiumcloud-api "
     echo "→ ${YELLOW}esb${NC}  :  colegiumcloud-api_esb "
     echo "→ ${YELLOW}pa${NC}   :  procesosautomaticos_esb "
+    echo "→ ${YELLOW}mar${NC}  :  marcaciones "
     echo " ${DGRAY}----------------------------${NC}"
     echo ""
 
@@ -221,6 +222,18 @@ function run() {
       echo ""
       npm run dev
 
+      # MARCACIONES
+      elif [[ "mar" == "$PROYECTO" ]]; then
+        echo "💥 ${LCYAN}CARGANDO CRON MARCACIONES${NC}"
+        echo ""
+        cd Documents/jobs/marcacron
+        pwd
+        nvm use 15.13.0
+        echo ""
+        echo "⚙️  INICIANDO PROYECTO..."
+        echo ""
+        nodemon cron
+
     else
       echo ""
       echo "${DGRAY}###################################################${NC}"
@@ -247,6 +260,7 @@ function run() {
       echo "  →  ${YELLOW}apic${NC} :  colegiumcloud-api "
       echo "  →  ${YELLOW}esb${NC}  :  colegiumcloud-api_esb "
       echo "  →  ${YELLOW}pa${NC}   :  procesosautomaticos_esb "
+      echo "  →  ${YELLOW}mar${NC}  :  marcaciones "
       echo " ${DGRAY}   --------------------------------${NC}"
       echo ""
       echo "${DGRAY}###################################################${NC}"
