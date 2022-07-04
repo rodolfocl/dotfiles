@@ -15,8 +15,11 @@
 
 
 # =======PASOS A EJECUTAR=======
-# Mover archivos dentro de los dotfiles
+# Mover archivos dentro de los dotfiles o Eliminar el archivo en la raiz del proyecto, ya que al existir en los dotfiles se hace solo el enlace simbolico, no debe existir para poder crearlo:
+# MOVER:
 # mv .gitconfig .dotfiles/git
+# ELIMINAR:
+# Seleccionar archivo y eliminar
 
 # Crear link simbolico
 # ln -s .dotfiles/git/.gitconfig
