@@ -222,6 +222,18 @@ function run() {
       echo ""
       npm run dev
 
+    # FIRMAELECTRONICA-API
+    elif [[ "fe" == "$PROYECTO" ]]; then
+      echo "💥 ${LCYAN}CARGANDO FIRMAELECTRONICA-API${NC}"
+      echo ""
+      cd Documents/webapp/firmaelectronica-api
+      pwd
+      nvm use 12.16.3
+      echo ""
+      echo "⚙️  INICIANDO PROYECTO..."
+      echo ""
+      nodemon api
+
       # MARCACIONES
       elif [[ "mar" == "$PROYECTO" ]]; then
         echo "💥 ${LCYAN}CARGANDO CRON MARCACIONES${NC}"
