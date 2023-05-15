@@ -1,3 +1,4 @@
+source ~/.profile
 # ===============================================================
 # IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
 source /Users/rodolfovenegas/.dotfiles/shell/init.sh
