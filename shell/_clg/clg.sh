@@ -86,7 +86,8 @@ function run() {
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
       # progress_bar
-      nodemon colegium_api.js
+      # nodemon colegium_api.js
+      node colegium_api.js
 
     # POSTULACIONES
     elif [[ "pos" == "$PROYECTO" ]]; then
@@ -99,7 +100,8 @@ function run() {
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
       # progress_bar
-      nodemon postulaciones.js
+      # nodemon postulaciones.js
+      node postulaciones.js
 
     # EXTRACURRICULARES
     elif [[ "ext" == "$PROYECTO" ]]; then
@@ -112,7 +114,8 @@ function run() {
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
       # progress_bar
-      nodemon extracurriculares.js
+      # nodemon extracurriculares.js
+      node extracurriculares.js
 
       # INHABILIDAD
       elif [[ "inha" == "$PROYECTO" ]]; then
@@ -124,7 +127,8 @@ function run() {
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
-      nodemon inhadoc.js
+      # nodemon inhadoc.js
+      node inhadoc.js
 
       # ORIENTACION Y SEGUIMINETO
       elif [[ "oys" == "$PROYECTO" ]]; then
@@ -136,7 +140,8 @@ function run() {
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
-      nodemon orientacion.js
+      # nodemon orientacion.js
+      node orientacion.js
 
       # GESTION DE TALENTOS
       elif [[ "gdt" == "$PROYECTO" ]]; then
@@ -148,7 +153,8 @@ function run() {
       echo ""
       echo "⚙️  INICIANDO PROYECTO..."
       echo ""
-      nodemon gdd.js
+      # nodemon gdd.js
+      node gdd.js
 
     # TEACHERTRACK
     elif [[ "tt" == "$PROYECTO" ]]; then
