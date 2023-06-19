@@ -11,6 +11,7 @@ alias 10="nvm use 10.15.3"
 alias 12="nvm use 12.16.3"
 alias 14="nvm use 14.17.3"
 alias 15="nvm use 15.13.0"
+alias 19="nvm use 19.2.0"
 
 # ALIASES UTILIZADOS PARA TRABAJAR EN COLEGIUM =================
 
@@ -40,6 +41,11 @@ alias runi="nodemon inhadoc.js"
 alias runo="nodemon orientacion.js"
 alias rung="nodemon gdd.js"
 alias dev="npm run dev"
+
+
+# CONSORCIO
+alias denu='cd Documents/cns/ms-vida-denuncios'
+alias go='npm run start'
 
 
 # FUNCIONES UTILIZADOS PARA TRABAJAR EN COLEGIUM ================
@@ -252,6 +258,18 @@ function run() {
         echo ""
         nodemon cron
 
+      # MARCACIONES
+      elif [[ "denu" == "$PROYECTO" ]]; then
+        echo "💥 ${LCYAN}CARGANDO MS-VIDA-DENUNCIOS${NC}"
+        echo ""
+        cd Documents/cns/ms-vida-denuncios
+        pwd
+        nvm use 19.2.0
+        echo ""
+        echo "⚙️  INICIANDO PROYECTO..."
+        echo ""
+        node app.js
+
     else
       echo ""
       echo "${DGRAY}###################################################${NC}"
@@ -279,6 +297,7 @@ function run() {
       echo "  →  ${YELLOW}esb${NC}  :  colegiumcloud-api_esb "
       echo "  →  ${YELLOW}pa${NC}   :  procesosautomaticos_esb "
       echo "  →  ${YELLOW}mar${NC}  :  marcaciones "
+      echo "  →  ${YELLOW}denu${NC} :  ms-vida-denuncios "
       echo " ${DGRAY}   --------------------------------${NC}"
       echo ""
       echo "${DGRAY}###################################################${NC}"
