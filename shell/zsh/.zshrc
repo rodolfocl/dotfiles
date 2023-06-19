@@ -83,6 +83,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -126,3 +129,10 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completionexport PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+
+
+
+
+echo "export PATH=/opt/oracle/instantclient_19_3:$PATH" > ~/.profile
+echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_3" >> ~/.profile
+source ~/.profile
