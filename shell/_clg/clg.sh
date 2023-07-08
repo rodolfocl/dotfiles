@@ -11,9 +11,8 @@ alias 10="nvm use 10.15.3"
 alias 12="nvm use 12.16.3"
 alias 14="nvm use 14.17.3"
 alias 15="nvm use 15.13.0"
-alias 19="nvm use 19.2.0"
 
-# ALIASES UTILIZADOS PARA TRABAJAR EN COLEGIUM =================
+# ALIASES UTILIZADOS PARA TRABAJAR EN COLEGIUM
 
 # Postulaciones: configurar host
 alias host="sudo vim /private/etc/hosts"
@@ -43,9 +42,6 @@ alias rung="nodemon gdd.js"
 alias dev="npm run dev"
 
 
-# CONSORCIO
-alias denu='cd Documents/cns/ms-vida-denuncios'
-alias go='npm run start'
 
 
 # FUNCIONES UTILIZADOS PARA TRABAJAR EN COLEGIUM ================
