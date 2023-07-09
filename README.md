@@ -1,6 +1,6 @@
 # DOTFILES
 
-#### Versionamiento de archivos de configuracion y preferencias de apps.
+#### Versionamiento de archivos de configuracion, preferencias de apps y perfiles zsh - bash.
 
 Clonar repositorio en directorio oculto en el home del equipo (/User/nombreUsuario/)
 
@@ -14,6 +14,7 @@ Ejecutar el comando:
 
 <br><hr>
 
-#### Seguir instrucciones de archivo symlink/link.sh
+## Configuración
+#### Seguir instrucciones de archivo symlink / link.sh
 * Eliminar archivos necesarios desde raiz /Users/rodolfovenegas
 * Crear enlaces simbolicos
