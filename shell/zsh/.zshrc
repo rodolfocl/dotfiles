@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# =======================================================================================
+# ZSH THEME
+# =======================================================================================
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/rodolfovenegas/.oh-my-zsh"
 
@@ -64,27 +68,30 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 
 # =======================================================================================
-# =======================P=L=U=G=I=N=S===================================================
+# PLUGINS
 # =======================================================================================
 
-# PLUGINS PERSONALIZADOS
-# 1- https://github.com/zsh-users/zsh-autosuggestions
-# 2- https://github.com/zsh-users/zsh-syntax-highlighting
-# INSTALACION
-# Ir al INSTALL.MD y clonar repositorio para la opcion Oh My Zsh, copio script y ejecuro en terminal
+# UTILIZADOS:
+# 1- autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
+## Sugiere comandos ya utilizados con aterioridad
 
-# zsh-autosuggestions: Sugiere comandos ya utilizados con aterioridad
-# zzsh-syntax-highlighting: Resalta comandos y resultados con coleres
-#
+# 2- highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
+## Resalta comandos y resultados con coleres
+
+# 3- tldr: brew install tldr
+## Muestra resumen de comandos
+
 # Video plugins: https://onedrive.live.com/?cid=1C5A9C77DFE4D4B9&id=1C5A9C77DFE4D4B9%21126154&parId=1C5A9C77DFE4D4B9%21126151&o=OneUp
 
-# DEFINO PLUGINS A UTILIZAR (separados por espacio)
+# DEFINO PLUGINS A UTILIZAR
+# Clonados en /Users/rodolfovenegas/.oh-my-zsh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# PARA USAR ESTA INVOCACION DE PLUGIN DEBEN ESTAR CLONADOS EN /Users/rodolfovenegas/
+# source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -93,13 +100,6 @@ source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -107,32 +107,65 @@ source /Users/rodolfovenegas/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 
-# ===============================================================
-# IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
-# source /Users/rodolfovenegas/.dotfiles/shell/init.sh
-source /Users/rodolfovenegas/.dotfiles/shell/_git/git.sh
-source /Users/rodolfovenegas/.dotfiles/shell/_clg/clg.sh
-source /Users/rodolfovenegas/.dotfiles/shell/_global/global.sh
-# ===============================================================
-# Para ver ejemplo de sintaxys de shell script
-# https://devhints.io/bash
+# =======================================================================================
+# VARIABLES DE ENTORNO
+# =======================================================================================
 
-
-# STRING QUE SE MUESTRA AL INICIAR CONSOLA
-# echo "Hola"
-# cat .demonio #Imagen en consola
-
-
-
-# VARIABLES DE ENTORNO NVM (PARA OBTENER LOS COMANDOS NVM)
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completionexport PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
 
-
-
 echo "export PATH=/opt/oracle/instantclient_19_3:$PATH" > ~/.profile
 echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_3" >> ~/.profile
 source ~/.profile
+
+export PATH=/Users/rodolfovenegas/instantclient:$PATH
+export ORACLE_HOME=/Users/rodolfovenegas/instantclient
+export DYLD_LIBRARY_PATH=/Users/rodolfovenegas/instantclient
+export OCI_LIB_DIR=/Users/rodolfovenegas/instantclient
+export OCI_INC_DIR=/Users/rodolfovenegas/instantclient/sdk/include
+
+
+# /usr/local/bin:/usr/bin:/bin
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+
+
+# =======================================================================================
+# IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
+# =======================================================================================
+
+# source /Users/rodolfovenegas/.dotfiles/shell/init.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_git/git.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_clg/clg.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_cns/cns.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_global/global.sh
+
+# Para ver ejemplo de sintaxys de shell script
+# https://devhints.io/bash
+
+
+# STRING QUE SE MUESTRA AL INICIAR CONSOLA
+# echo "Hola"
+# cat .demonio #Imagen en consolaexport PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
