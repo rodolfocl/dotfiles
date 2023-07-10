@@ -21,4 +21,4 @@ alias ris='cd Documents/cns/desivi-3'
 
 
 # Execute projects
-alias go='npm run start'
+alias go='npm run start:dev'
