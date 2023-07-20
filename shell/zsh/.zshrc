@@ -130,8 +130,7 @@ export OCI_INC_DIR=/Users/rodolfovenegas/instantclient/sdk/include
 
 
 # /usr/local/bin:/usr/bin:/bin
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+
 
 
 # =======================================================================================
@@ -150,6 +149,6 @@ source /Users/rodolfovenegas/.dotfiles/shell/_global/global.sh
 
 # STRING QUE SE MUESTRA AL INICIAR CONSOLA
 # echo "Hola"
-# cat .demonio #Imagen en consolaexport PYENV_ROOT="$HOME/.pyenv"
+# cat .demonio #Imagen en consola
 
 
