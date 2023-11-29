@@ -18,6 +18,7 @@ alias cns='cd Documents/cns'
 alias vida='cd Documents/cns/ms-vida-denuncios'
 alias dens='cd Documents/cns/densiniestro'
 alias ris='cd Documents/cns/desivi-3'
+alias facade='cd Documents/cns/ms-salesforce-facade'
 
 
 # Execute projects
