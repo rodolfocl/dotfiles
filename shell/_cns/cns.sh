@@ -15,10 +15,10 @@ alias host="sudo vim /private/etc/hosts"
 
 # directories
 alias cns='cd Documents/cns'
-alias vida='cd Documents/cns/ms-vida-denuncios'
-alias dens='cd Documents/cns/densiniestro'
-alias ris='cd Documents/cns/desivi-3'
-alias facade='cd Documents/cns/ms-salesforce-facade'
+alias vida='cd Documents/cns/vida-denuncios/ms-vida-denuncios'
+alias dens='cd Documents/cns/vida-denuncios/densiniestro'
+alias ris='cd Documents/cns/vida-denuncios/desivi-3'
+alias facade='cd Documents/cns/vida-denuncios/ms-salesforce-facade'
 
 
 # Execute projects
