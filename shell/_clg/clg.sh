@@ -24,9 +24,9 @@ alias pos='cd Documents/cloud/postulaciones'
 alias inha='cd Documents/cloud/inhabilidad_docente'
 alias ori='cd Documents/cloud/orientacion'
 alias ges='cd Documents/cloud/gdd'
-alias api='cd Documents/cloud/colegium-api'
+#alias api='cd Documents/cloud/colegium-api'
 alias tt='cd Documents/webapp/teachertrack-webapp'
-alias apic='cd Documents/webapp/colegiumcloud-api'
+#alias apic='cd Documents/webapp/colegiumcloud-api'
 alias esb='cd Documents/webapp/colegiumcloud-api_esb'
 alias sn4='cd Documents/webapp/schoolnet4-webapp'
 alias app='cd Documents/webapp/colegiumcloud-appbasefrontend'
@@ -39,7 +39,7 @@ alias runr="nodemon reinscripciones.js"
 alias runi="nodemon inhadoc.js"
 alias runo="nodemon orientacion.js"
 alias rung="nodemon gdd.js"
-alias dev="npm run dev"
+#alias dev="npm run dev"
 
 
 

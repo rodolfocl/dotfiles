@@ -19,7 +19,9 @@ alias vida='cd Documents/cns/vida-denuncios/ms-vida-denuncios'
 alias dens='cd Documents/cns/vida-denuncios/densiniestro'
 alias ris='cd Documents/cns/vida-denuncios/desivi-3'
 alias facade='cd Documents/cns/vida-denuncios/ms-salesforce-facade'
+alias apiv='cd Documents/cns/vida-denuncios/api-vida-denuncios'
 
 
 # Execute projects
 alias go='npm run start:dev'
+alias dev="npm run dev"
