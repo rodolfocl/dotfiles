@@ -6,8 +6,10 @@ source /Users/rodolfovenegas/.dotfiles/shell/_global/variables.sh
 # CONSORCIO
 
 # Node versions
+alias 14="nvm use 14.21.3"
 alias 18="nvm use 18.16.1"
 alias 19="nvm use 19.2.0"
+alias 20="nvm use v20.11.1"
 
 # Generales
 alias host="sudo vim /private/etc/hosts"
@@ -25,6 +27,10 @@ alias apiv='cd Documents/cns/vida-denuncios/api-vida-denuncios'
 
 # Directories Documatico
 alias doc='cd Documents/cns/documatico/ms-core-vida-documatico'
+
+# Directories Api Backoffice-authentication
+alias apib='cd Documents/cns/authentication/api-seguros-backoffice'
+alias microsoft='cd Documents/cns/authentication/ms-microsoft-facade'
 
 # Execute projects
 alias go='npm run start:dev'
