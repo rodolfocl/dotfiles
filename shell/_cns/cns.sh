@@ -28,9 +28,9 @@ alias apiv='cd Documents/cns/vida-denuncios/api-vida-denuncios'
 # Directories Documatico
 alias doc='cd Documents/cns/documatico/ms-core-vida-documatico'
 
-# Directories Api Backoffice-authentication
-alias apib='cd Documents/cns/authentication/api-seguros-backoffice'
-alias microsoft='cd Documents/cns/authentication/ms-microsoft-facade'
+# Directories Api Backoffice-authenticator
+alias apib='cd Documents/cns/authenticator/api-seguros-backoffice'
+alias microsoft='cd Documents/cns/authenticator/ms-microsoft-facade'
 
 # Execute projects
 alias go='npm run start:dev'
