@@ -7,9 +7,12 @@ source /Users/rodolfovenegas/.dotfiles/shell/_global/variables.sh
 
 # Node versions
 alias 22="nvm use 22.14.0"
+alias 18="nvm use 18.20.6"
+alias 16="nvm use 16.20.2"
 
 # Generales
 alias host="sudo vim /private/etc/hosts"
+alias rs="source ~/.zshrc "
 
 # Directories CMT
 alias cmt='cd Documents/cmt'
