@@ -141,6 +141,7 @@ export OCI_INC_DIR=/Users/rodolfovenegas/instantclient/sdk/include
 source /Users/rodolfovenegas/.dotfiles/shell/_git/git.sh
 source /Users/rodolfovenegas/.dotfiles/shell/_clg/clg.sh
 source /Users/rodolfovenegas/.dotfiles/shell/_cns/cns.sh
+source /Users/rodolfovenegas/.dotfiles/shell/_cmt/cmt.sh
 source /Users/rodolfovenegas/.dotfiles/shell/_global/global.sh
 
 # Para ver ejemplo de sintaxys de shell script
@@ -152,3 +153,7 @@ source /Users/rodolfovenegas/.dotfiles/shell/_global/global.sh
 # cat .demonio #Imagen en consola
 
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion"
