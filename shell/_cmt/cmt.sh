@@ -16,6 +16,7 @@ alias rs="source ~/.zshrc "
 
 # Directories CMT
 alias cmt='cd Documents/cmt'
+alias data='cd Documents/cmt/data-collector-server'
 
 
 
