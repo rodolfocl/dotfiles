@@ -118,9 +118,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
 # ORACLE INSTANT CLIENT
-echo "export PATH=/opt/oracle/instantclient_19_3:$PATH" > ~/.profile
-echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_3" >> ~/.profile
-source ~/.profile
+# echo "export PATH=/opt/oracle/instantclient_19_3:$PATH" > ~/.profile
+# echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_3" >> ~/.profile
+# source ~/.profile
 
 export PATH=/Users/rodolfovenegas/instantclient:$PATH
 export ORACLE_HOME=/Users/rodolfovenegas/instantclient
@@ -157,3 +157,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion"
+
+PATH=~/.console-ninja/.bin:$PATH
