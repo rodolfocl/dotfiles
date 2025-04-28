@@ -16,11 +16,13 @@ alias rs="source ~/.zshrc "
 
 # Directories CMT
 alias cmt='cd Documents/cmt'
-alias data='cd Documents/cmt/data-collector-server'
-alias queue='cd Documents/cmt/queue-management-server'
-alias lab='cd Documents/cmt/laboratory-server'
-alias conf='cd Documents/cmt/confirmation-message-server'
+alias integrations='cd Documents/integrations'
 alias sage='cd Documents/cmt/sage'
+alias general='cd Documents/cmt/general'
+alias data='cd Documents/cmt/integrations/data-collector-server'
+alias queue='cd Documents/cmt/integrations/queue-management-server'
+alias lab='cd Documents/cmt/integrations/laboratory-server'
+alias conf='cd Documents/cmt/integrations/confirmation-message-server'
 
 
 
