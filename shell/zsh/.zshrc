@@ -131,8 +131,6 @@ export OCI_INC_DIR=/Users/rodolfovenegas/instantclient/sdk/include
 
 # /usr/local/bin:/usr/bin:/bin
 
-
-
 # =======================================================================================
 # IMPORTO ARCHIVO INDEX REDIRECCIONANDO A LOS ALIASES Y FUNCIONES
 # =======================================================================================
@@ -159,3 +157,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion"
 
 
+
+# Add custom functions CMT
+source $HOME/.zsh_functions

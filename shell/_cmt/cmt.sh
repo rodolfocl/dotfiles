@@ -25,11 +25,6 @@ alias lab='cd Documents/cmt/integrations/laboratory-server'
 alias conf='cd Documents/cmt/integrations/confirmation-message-server'
 
 
-
-# Directories Api Backoffice-authenticator
-alias apib='cd Documents/cns/authenticator/api-seguros-backoffice'
-alias microsoft='cd Documents/cns/authenticator/ms-microsoft-facade'
-
 # Execute projects
 alias go='npm run start:dev'
 alias dev="npm run dev"
