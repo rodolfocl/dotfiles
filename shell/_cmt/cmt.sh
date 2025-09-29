@@ -22,7 +22,7 @@ alias general='cd Documents/cmt/general'
 alias data='cd Documents/cmt/integrations/data-collector-server'
 alias queue='cd Documents/cmt/integrations/queue-management-server'
 alias conf='cd Documents/cmt/integrations/confirmation-message-server'
-alias bionet='cd Documents/cmt/integrations/labocdory-bionet'
+alias bionet='cd Documents/cmt/integrations/laboratory-bionet'
 alias bupa='cd Documents/cmt/integrations/laboratory-server'
 
 
