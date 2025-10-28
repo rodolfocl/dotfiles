@@ -24,6 +24,7 @@ alias queue='cd Documents/cmt/integrations/queue-management-server'
 alias conf='cd Documents/cmt/integrations/confirmation-message-server'
 alias bionet='cd Documents/cmt/integrations/laboratory-bionet'
 alias bupa='cd Documents/cmt/integrations/laboratory-server'
+alias synlab='cd Documents/cmt/integrations/synlab'
 
 
 # Execute projects
